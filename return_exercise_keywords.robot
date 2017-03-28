@@ -37,13 +37,10 @@ User Sorts From Lowest Price To Highest Price
 List Of Cars Should Be Displayed
     [Arguments]    ${p_minimum_item_price}    ${p_maximum_item_price}
     ${p_minimum_item_price}=   Execute Javascript    return window.${MINIMUM_PRICE_HEADER}
-    [Return]    ${p_minimum_item_price}
     Element Should Be Visible    ${MINIMUM_PRICE_HEADER}    ${p_minimum_item_price}
     ${p_pagination_last_page}=   Execute Javascript    return window.${PAGINATION_LAST_PAGE_BTN}
-    [Return]    ${p_pagination_last_page}
     Click Element    ${p+p_pagination_last_page}
     ${p_maximum_item_price}=   Execute Javascript    return window.${MAXIMUM_PRICE_HEADER}
-    [Return]    ${p_maximum_item_price}
     Element Should Be Visible    ${MINIMUM_PRICE_HEADER}    ${p_maximum_item_price}
 
 
