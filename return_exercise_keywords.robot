@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                /filtering_by_price_variables.robot
+Resource                /return_exercise_variables.robot
 
 *** Keywords ***
 ############################
